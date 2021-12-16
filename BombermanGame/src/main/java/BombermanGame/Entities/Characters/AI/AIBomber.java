@@ -80,12 +80,12 @@ public class AIBomber extends AI {
         int countSmart = 0;
         for (int i = 0; i < m; i++)
             for (int j = 0; j < n; j++)
-                if (map[i][j] == '2' || map[i][j] == '4' || map[i][j] == '5' || map[i][j] == '6') countSmart++;
+                if (map[i][j] == '2' || map[i][j] == '3' || map[i][j] == '4' || map[i][j] == '5' || map[i][j] == '6') countSmart++;
 
         if (countSmart == 0) c = '1';
         for (int i = 0; i < m; i++)
             for (int j = 0; j < n; j++)
-                if (map[i][j] == '2' || map[i][j] == '4' || map[i][j] == '5' || map[i][j] == '6' || map[i][j] == c) {
+                if (map[i][j] == '2' || map[i][j] == '3' || map[i][j] == '4' || map[i][j] == '5' || map[i][j] == '6' || map[i][j] == c) {
                     queue.add(new Pair(i, j));
                     d[i][j] = 0;
                 } else d[i][j] = -1;

@@ -109,7 +109,7 @@ public abstract class AI {
 
         for (int i = 0; i < m; i++)
             for (int j = 0; j < n; j++)
-                if (map[i][j] == '4') {
+                if (map[i][j] == '7') {
                     queue.add(new Pair(i, j));
                     distanceFromEnemy[i][j] = 0;
                 }
