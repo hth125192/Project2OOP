@@ -1,0 +1,61 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface IRender
+abstract class Entity
+abstract class AnimatedEntity
+abstract class Character
+abstract class Enemy
+abstract class Tile
+abstract class Item
+abstract class AI
+abstract class AIEnemy
+abstract class LevelLoader
+
+IRender <.. Entity
+IRender <.. Board
+
+Entity <-- AnimatedEntity
+Entity <-- LayeredEntity
+Entity <-- Message
+Entity <-- Tile
+Entity <-- Flame
+
+AnimatedEntity <-- Bomb
+AnimatedEntity <-- FlameSegment
+AnimatedEntity <-- Character
+
+Character <-- Bomber
+Character <-- Enemy
+
+Enemy <-- Balloom
+Enemy <-- Oneal
+Enemy <-- Doll
+Enemy <-- Minvo
+Enemy <-- Ghost
+Enemy <-- Kondoria
+
+Tile <-- Item
+Tile <-- DestroyableTile
+Tile <-- Wall
+Tile <-- Grass
+Tile <-- Portal
+
+Item <-- BombItem
+Item <-- FlameItem
+Item <-- SpeedItem
+
+DestroyableTile <-- Brick
+
+AI <-- AIBomber
+AI <-- AIEnemy
+
+AIEnemy <-- AILow
+AIEnemy <-- AIMedium
+AIEnemy <-- AIHigh
+
+LevelLoader <-- FileLevelLoader
+
+BombermanException <-- LoadLevelException
+
+@enduml
