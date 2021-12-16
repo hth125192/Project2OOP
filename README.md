@@ -81,9 +81,6 @@ Run -> Edit Configurations... -> Add new run configuration... -> Application
 - Main class: BombermanGame.BombermanGame
 - Name: BombermanGame
 
-Modify options -> Add VM options
-- VM options: --module-path "\path\to\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml
-
 ## Controls and Options
 
 | Control | Key 1 | Key 2 |
