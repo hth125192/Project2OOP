@@ -19,7 +19,7 @@ Bài tập lớn số 2 - Bomberman (UET OASIS - I2122 INT2204 24 - Lập trình
 Nếu bạn đã từng chơi Bomberman, bạn sẽ cảm thấy quen thuộc với những đối tượng này. Chúng được được chia làm hai loại chính là nhóm đối tượng động (*Bomber*, *Enemy*, *Bomb*) và nhóm đối tượng tĩnh (*Grass*, *Wall*, *Brick*, *Portal*, *Item*)
 
 - ![](BombermanGame/src/main/resources/Utils/Sprites/player_down.png) *Bomber* là nhân vật chính của trò chơi. *Bomber* có thể di chuyển theo 4 hướng trái/phải/lên/xuống theo sự điều khiển của người chơi
-- ![](BombermanGame/src/main/resources/Utils/Sprites/balloom_left1.png) *Enemy* là các đối tượng mà Bomber phải tiêu diệt hết để có thể qua Level. *Enemy* có thể di chuyển ngẫu nhiên hoặc tự đuổi theo *Bomber* tùy theo loại *Enemy*. Các loại *Enemy* sẽ được mô tả cụ thể ở phần dưới
+- ![](BombermanGame/src/main/resources/Utils/Sprites/balloom_left1.png) *Enemy* là các đối tượng mà *Bomber* phải tiêu diệt hết để có thể qua level. *Enemy* có thể di chuyển ngẫu nhiên hoặc tự đuổi theo *Bomber* tùy theo loại *Enemy*. Các loại *Enemy* sẽ được mô tả cụ thể ở phần dưới
 - ![](BombermanGame/src/main/resources/Utils/Sprites/bomb.png) *Bomb* là đối tượng mà *Bomber* sẽ đặt và kích hoạt tại các ô *Grass*. Khi đã được kích hoạt, *Bomber* và *Enemy* không thể di chuyển vào vị trí *Bomb*. Tuy nhiên ngay khi *Bomber* vừa đặt và kích hoạt *Bomb* tại ví trí của mình, *Bomber* có một lần được đi từ vị trí đặt *Bomb* ra vị trí bên cạnh. Sau khi kích hoạt 2s, *Bomb* sẽ tự nổ, các đối tượng *Flame* ![](BombermanGame/src/main/resources/Utils/Sprites/explosion_horizontal.png) được tạo ra
 - ![](BombermanGame/src/main/resources/Utils/Sprites/grass.png) *Grass* là đối tượng mà *Bomber* và *Enemy* có thể di chuyển xuyên qua, và cho phép đặt *Bomb* lên vị trí của nó
 - ![](BombermanGame/src/main/resources/Utils/Sprites/wall.png) *Wall* là đối tượng cố định, không thể phá hủy bằng *Bomb* cũng như không thể đặt *Bomb* lên được, *Bomber* và *Enemy* không thể di chuyển vào đối tượng này
@@ -73,6 +73,7 @@ Có rất nhiều loại *Enemy* trong Bomberman, tuy nhiên trong phiên bản 
 - Java SE Development Kit 17
 - Java Swing, Java Awt
 - Maven Framework
+- PlantUML Integration
 
 ## Guide
 
